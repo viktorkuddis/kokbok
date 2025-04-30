@@ -1,0 +1,29 @@
+ul,
+ol,
+li {
+  all: unset;
+  line-height: 2rem;
+}
+
+.menuBar {
+  border-bottom: 3px solid
+    color-mix(in srgb, var(--brand-color-strong-subtle) 50%, transparent);
+  padding: 1rem 0;
+}
+
+.menuItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  padding: 0.5rem 1rem;
+  color: color-mix(in srgb, var(--fg-color-secondary) 50%, grey);
+  &:hover {
+    color: var(--brand-color-strong);
+  }
+}
+
+.activeLink {
+  color: var(--fg-color-primary); /* Färg för den aktiva länken */
+  font-weight: bold; /* Om du vill att den aktiva länken ska vara fetstil */
+}
