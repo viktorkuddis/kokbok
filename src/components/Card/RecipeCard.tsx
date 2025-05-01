@@ -1,20 +1,18 @@
-import { ReactNode } from "react";
 import CardContainer from "./CardContainer/RecepieCard/CardContainer";
 import styles from "./RecepieCard.module.css";
+import { Recipe } from "../../schemas/recipeSchema";
 
 interface Props {
   headingLevel?: "h2" | "h3" | "h4";
-  heading?: string;
-  children?: ReactNode;
-  recipe: object;
+  recipe: Recipe;
 }
-export const RecipeCard = ({ headingLevel = "h2", heading }: Props) => {
+export const RecipeCard = ({ headingLevel = "h2", recipe }: Props) => {
   const Heading = headingLevel;
 
   return (
     <div>
       <CardContainer className={styles.cardContainer}>
-        <Heading>{heading}</Heading>
+        <Heading>{recipe.title}</Heading>
       </CardContainer>
     </div>
   );

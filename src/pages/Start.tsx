@@ -9,9 +9,7 @@ const Start = () => {
     <div className="page-section-content-container">
       Start
       {recipes.map((recipe, i) => (
-        <RecipeCard key={i} recipe={recipe}>
-          hej
-        </RecipeCard>
+        <RecipeCard key={i} recipe={recipe} />
       ))}
     </div>
   );
