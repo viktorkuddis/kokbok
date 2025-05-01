@@ -1,41 +1,5 @@
 import { createContext, ReactNode, useState } from "react";
 
-// interface RecipeVersions {
-//   versionTitle: string;
-//   ingredients: string[];
-//   richIngredients?: object[];
-//   instructions: string[];
-//   richInstructions?: object[];
-//   macrosPerServing: {
-//     calories: number;
-//     protein: number;
-//     fat: number;
-//     carbohydrates: number;
-//   };
-//   servings: number;
-// }
-
-// interface Recipe {
-//   id: string;
-//   title: string;
-//   mainIngredient: string;
-//   categories: string[];
-//   lastMealPrep: {
-//     start: string;
-//     end: string;
-//     latest: string;
-//   };
-//   Rating: {
-//     lable: string;
-//     value: number;
-//     color: string;
-//   };
-//   original: RecipeVersions;
-//   custom1: RecipeVersions;
-//   custom2: RecipeVersions;
-//   custom3: RecipeVersions;
-// }
-
 // Typen för kontexten (AppContextType) - det man kan skicka i providern.
 interface AppContextType {
   testvariabel: string;
