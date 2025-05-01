@@ -1,27 +1,9 @@
-body {
-  --bg-color-base: #ffffff;
-  --bg-color-elevated: #fafafa;
-  --bg-color-base-inverted: #f6f6f6;
-  --bg-color-elevated-iverted: #ffffff;
-
-  --fg-color-primary: #141b23;
-  --fg-color-secondary: #525252;
-
-  --brand-color-strong: #169800;
-  --brand-color-base: #4c8862;
-  --brand-color-strong-subtle: #ebf6e8;
-  --brand-color-base-subtle: #86bf93;
-
-  --border-color-strong: #525252;
-  --border-color-subtle: #525252;
-}
-
 .page-section-content-container {
   /* border: 1px solid #000; */
   margin: 0 auto;
   width: 100vw;
   max-width: 1024px;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .hero-section {

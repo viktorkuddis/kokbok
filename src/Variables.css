@@ -1,0 +1,23 @@
+body {
+  --bg-color-base: #ffffff;
+  --bg-color-elevated: #fafafa;
+
+  --bg-color-base-inverted: #f6f6f6;
+  --bg-color-elevated-inverted: #ffffff;
+
+  --fg-color-primary: #141b23;
+  --fg-color-secondary: #525252;
+
+  --brand-color-strong: #169800;
+  --brand-color-base: #4c8862;
+  --brand-color-strong-subtle: #ebf6e8;
+  --brand-color-base-subtle: #86bf93;
+
+  --border-color-strong: #525252;
+  --border-color-subtle: #525252;
+
+  /* units: */
+  --border-radius-base: 1rem;
+  --border-radius-lg: 2rem;
+  --border-radius-sm: 0.5rem;
+}

@@ -14,9 +14,10 @@ li {
 .menuItems {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 .item {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0rem;
   color: color-mix(in srgb, var(--fg-color-secondary) 50%, grey);
   &:hover {
     color: var(--brand-color-strong);

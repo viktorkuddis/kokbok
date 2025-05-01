@@ -1,0 +1,12 @@
+.card {
+  padding: 1rem;
+  border-radius: var(--border-radius-base);
+  background-color: var(--bg-color-elevated);
+}
+
+.inverted {
+  background-color: var(--bg-color-elevated-inverted);
+}
+.shadow {
+  box-shadow: 0rem 0.25rem 3rem rgba(0, 0, 0, 0.1);
+}
