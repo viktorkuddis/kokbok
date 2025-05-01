@@ -10,25 +10,23 @@ import Browse from "./pages/Browse";
 import Layout from "./pages/Layout";
 import KitchenList from "./pages/KitchenList";
 import ShoppingList from "./pages/ShoppingList";
-import { useContext } from "react";
-import { AppContext } from "./context/AppContext";
+// import { useContext } from "react";
+// import { AppContext } from "./context/AppContext";
 // import { getAllRecipes } from "./api/getRecipe";
-import { useGetRecipes } from "./hooks/useGetRecepies";
+// import { useGetRecipes } from "./hooks/useGetRecepies";
 
 // React-komponent
+
+import { useRecipeFetcher } from "./hooks/useRecipeFetcher";
+
+import { useEffect } from "react";
 const App = () => {
-  const context = useContext(AppContext);
+  const fetchAndStoreRecipes = useRecipeFetcher();
 
-  const { recipes } = useContext(AppContext);
-
-  console.log(context.testvariabel);
-
-  useGetRecipes();
-
-  setTimeout(() => {
-    console.log(recipes);
-    console.log("timeout");
-  }, 3000);
+  // useEffect för att anropa funktionen när appen först monteras
+  useEffect(() => {
+    fetchAndStoreRecipes();
+  }, [fetchAndStoreRecipes]);
 
   return (
     <>

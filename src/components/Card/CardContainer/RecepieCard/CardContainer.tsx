@@ -6,28 +6,24 @@ import cn from "classnames";
 interface Props {
   isInverted?: boolean;
   shadow?: boolean;
-  headingLevel?: "h2" | "h3" | "h4";
-  heading?: string;
-  children: ReactNode;
+  children?: ReactNode;
+  className?: string;
 }
 
 const CardContainer = ({
   isInverted = false,
   shadow = false,
-  headingLevel = "h2",
-  heading,
   children,
+  className,
 }: Props) => {
-  const Heading = headingLevel;
   return (
     <>
       <div
-        className={cn(styles.card, {
+        className={cn(className, styles.card, {
           [styles.inverted]: isInverted,
           [styles.shadow]: shadow,
         })}
       >
-        <Heading>{heading}</Heading>
         {children}
       </div>
     </>

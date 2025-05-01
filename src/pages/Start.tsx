@@ -1,17 +1,18 @@
-import React from "react";
-
-import CardContainer from "../components/Card/CardContainer";
-
-import 
+import { useContext } from "react";
+import { RecipeCard } from "../components/Card/RecipeCard";
+import { AppContext } from "../context/AppContext";
 
 const Start = () => {
+  const { recipes } = useContext(AppContext);
+
   return (
     <div className="page-section-content-container">
       Start
-      <br />
-      <CardContainer headingLevel={"h3"} heading={"köp barn"}>
-        detta är children
-      </CardContainer>
+      {recipes.map((recipe, i) => (
+        <RecipeCard key={i} recipe={recipe}>
+          hej
+        </RecipeCard>
+      ))}
     </div>
   );
 };
