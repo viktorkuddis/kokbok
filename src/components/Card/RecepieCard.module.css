@@ -7,12 +7,13 @@
 }
 
 .cover {
-  /* border: 1px solid green; */
+  border: 1px solid green;
+  height: min-content;
+  width: min-content;
   /* position: absolute;
   bottom: 0;
   right: 0px;
-  height: min-content;
-  width: min-content;
+ 
 
   transform: scale(0.3) rotate(0) translateY(112%) translatex(125%); */
   /* transform: scale(0.3); */

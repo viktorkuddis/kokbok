@@ -5,6 +5,7 @@ type Props = {
   cookingMethod: string[] | null;
   categories: string[] | null;
   mealType: string[] | null;
+  scale: number | null;
 };
 
 // Funktion för att extrahera alla emojis från en sträng
@@ -25,9 +26,17 @@ const Cover = (props: Props) => {
   const categories = extractAllEmojis(props.categories?.join("") || "");
   const mealType = extractAllEmojis(props.mealType?.join("") || "");
 
+  const scale = props.scale ? `${props.scale}rem` : "1rem";
+
   return (
-    <>
-      <div className={styles.gridContainer}>
+    <div
+      // denna container finns för att sätta skala för css variabeln men också för att ha något att centrera hela gridet i visuellt, eftersom saker inuti gridet translatear sin position så känns hela komponenten lite förskjuten i position annars
+      className={styles.container}
+      style={{
+        fontSize: scale,
+      }}
+    >
+      <div className={styles.grid}>
         <div className={styles.mealType}>
           {mealType.map((symbol) => (
             <div>{symbol}</div>
@@ -50,7 +59,7 @@ const Cover = (props: Props) => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,17 +1,38 @@
-.gridContainer {
-  height: 20rem;
-  width: 30rem;
-  font-size: 10rem;
+.container {
+  /* denna container finns för att sätta skala för css variabeln men också för att ha något att centrera hela gridet i visuellt, eftersom saker inuti gridet translatear sin position så känns hela komponenten lite förskjuten i position annars */
+
+  /* background-color: antiquewhite; */
+}
+
+.grid {
+  /* -------------------------------------- */
+  /* -------VARIABEL FÖR SKALA------------- */
+  /* -------------------------------------- */
+  --scale: calc(1em * 10);
+  /* -------------------------------------- */
+  /* -------------------------------------- */
+
+  /* --------------------------------- */
+  /* --------------------------------- */
+
+  /* height: 20rem; */
+  height: calc(var(--scale) * 2);
+
+  /* width: 30rem; */
+  width: calc(var(--scale) * 2);
 
   /* background-color: rgb(216, 243, 227); */
 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
+
+  transform: translateX(4%);
 }
 
 .mainIndgredient {
-  font-size: 110%;
+  /* font-size: 110%; */
+  font-size: calc(var(--scale) * 1.1);
   /* text-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5); */
 
   display: grid;
@@ -24,7 +45,8 @@
 }
 
 .cookingMethod {
-  font-size: 50%;
+  /* font-size: 50%; */
+  font-size: calc(var(--scale) * 0.5);
   line-height: 100%;
   /* text-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5); */
 
@@ -40,11 +62,14 @@
   transform: rotate(10deg) translateX(-10%);
 }
 .cookingMethod > div:nth-child(even) {
-  transform: translateX(-1rem);
+  transform: translateX(-20%);
+
+  /* background-color: red; */
 }
 
 .categories {
-  font-size: 30%;
+  /* font-size: 30%; */
+  font-size: calc(var(--scale) * 0.3);
   line-height: 100%;
 
   /* text-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5); */
@@ -62,13 +87,15 @@
   transform: rotate(-5deg) translateX(-5%) translatey(5%);
 }
 .categories > div:nth-child(even) {
-  transform: translateY(1rem);
+  transform: translateY(30%);
 }
 
 .mealType {
-  font-size: 40%;
+  /* font-size: 40%; */
+  /* --------------------------------- */
+  font-size: calc(var(--scale) * 0.4);
+  /* --------------------------------- */
   line-height: 100%;
-
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -79,15 +106,18 @@
 }
 
 .mealType > div:nth-child(5) {
-  transform: translateX(0.5rem);
+  transform: translateX(10%);
+
   /* background-color: antiquewhite; */
 }
 
 .mealType > div:nth-child(2) {
-  transform: translateX(-2rem);
+  transform: translateX(-50%);
+
   /* background-color: blue; */
 }
 .mealType > div:nth-child(1) {
-  transform: translateX(-1.5rem) translateY(0.3rem);
+  transform: translateX(-45%) translateY(10%);
+
   /* background-color: red; */
 }
