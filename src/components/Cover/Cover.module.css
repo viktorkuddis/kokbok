@@ -1,54 +1,41 @@
 .container {
   /* denna container finns för att sätta skala för css variabeln men också för att ha något att centrera hela gridet i visuellt, eftersom saker inuti gridet translatear sin position så känns hela komponenten lite förskjuten i position annars */
 
-  /* background-color: antiquewhite; */
+  width: fit-content;
+  /* background-color: rgba(194, 144, 78, 0.456); */
 }
 
 .grid {
-  /* -------------------------------------- */
   /* -------VARIABEL FÖR SKALA------------- */
-  /* -------------------------------------- */
   --scale: calc(1em * 10);
   /* -------------------------------------- */
-  /* -------------------------------------- */
-
-  /* --------------------------------- */
-  /* --------------------------------- */
-
-  /* height: 20rem; */
-  height: calc(var(--scale) * 2);
-
-  /* width: 30rem; */
-  width: calc(var(--scale) * 2);
-
-  /* background-color: rgb(216, 243, 227); */
-
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
 
-  transform: translateX(4%);
+  transform: translateX(5%);
+  margin: 0 auto;
+  /* background-color: rgba(97, 167, 125, 0.426); */
 }
 
 .mainIndgredient {
-  /* font-size: 110%; */
+  /* --------------------------------- */
   font-size: calc(var(--scale) * 1.1);
-  /* text-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5); */
-
+  /* --------------------------------- */
   display: grid;
   place-content: center;
 
   grid-column: 2 / 6;
   grid-row: 2 / 6;
-  /* background-color: rgba(245, 245, 220, 0.407); */
   transform: rotate(-5deg);
+  /* background-color: rgba(245, 245, 220, 0.407); */
 }
 
 .cookingMethod {
-  /* font-size: 50%; */
+  /* --------------------------------- */
   font-size: calc(var(--scale) * 0.5);
+  /* --------------------------------- */
   line-height: 100%;
-  /* text-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5); */
 
   display: flex;
   align-items: center;
@@ -58,40 +45,36 @@
 
   grid-column: 1 / 3;
   grid-row: 1 / 7;
-  /* background-color: rgba(55, 203, 203, 0.735); */
   transform: rotate(10deg) translateX(-10%);
+  /* background-color: rgba(55, 203, 203, 0.249); */
 }
 .cookingMethod > div:nth-child(even) {
   transform: translateX(-20%);
-
   /* background-color: red; */
 }
 
 .categories {
-  /* font-size: 30%; */
+  /* --------------------------------- */
   font-size: calc(var(--scale) * 0.3);
+  /* --------------------------------- */
   line-height: 100%;
-
-  /* text-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5); */
 
   display: flex;
   justify-content: center;
-  gap: 1rem;
   align-content: center;
   flex-wrap: wrap-reverse;
 
   grid-column: 1 / 7;
   grid-row: 5 / 7;
-  /* background-color: rgba(255, 182, 193, 0.406); */
 
   transform: rotate(-5deg) translateX(-5%) translatey(5%);
+  /* background-color: rgba(255, 182, 193, 0.406); */
 }
 .categories > div:nth-child(even) {
   transform: translateY(30%);
 }
 
 .mealType {
-  /* font-size: 40%; */
   /* --------------------------------- */
   font-size: calc(var(--scale) * 0.4);
   /* --------------------------------- */
@@ -101,23 +84,20 @@
   flex-wrap: wrap;
   grid-column: 4 / 7;
   grid-row: 1 / 3;
-  /* background-color: rgba(101, 33, 43, 0.406); */
   transform: rotate(5deg);
+  /* background-color: rgba(101, 33, 43, 0.406); */
 }
 
 .mealType > div:nth-child(5) {
   transform: translateX(10%);
-
   /* background-color: antiquewhite; */
 }
 
 .mealType > div:nth-child(2) {
   transform: translateX(-50%);
-
   /* background-color: blue; */
 }
 .mealType > div:nth-child(1) {
   transform: translateX(-45%) translateY(10%);
-
   /* background-color: red; */
 }
