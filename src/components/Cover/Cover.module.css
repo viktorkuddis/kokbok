@@ -1,8 +1,9 @@
 .container {
   /* denna container finns för att sätta skala för css variabeln men också för att ha något att centrera hela gridet i visuellt, eftersom saker inuti gridet translatear sin position så känns hela komponenten lite förskjuten i position annars */
 
-  width: fit-content;
-  /* background-color: rgba(194, 144, 78, 0.456); */
+  /* width: fit-content;
+  width: 100%; */
+  background-color: rgba(194, 144, 78, 0.456);
 }
 
 .grid {

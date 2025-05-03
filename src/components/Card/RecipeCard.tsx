@@ -20,9 +20,9 @@ export const RecipeCard = ({ headingLevel = "h2", recipe }: Props) => {
             cookingMethod={recipe.cookingMethod}
             categories={recipe.categories}
             mealType={recipe.mealType}
-            scale={1}
-            widthInScaleUnits={1}
-            heightRatio={0.66}
+            scale={0.3}
+            widthInScaleUnits={1.2}
+            heightRatio={0.7}
           />
         </div>
         hej Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
