@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { RecipeCard } from "../components/Card/RecipeCard";
+import { RecipeCard } from "../components/Card/RecepieCard/RecipeCard";
 import { AppContext } from "../context/AppContext";
 
 const Start = () => {

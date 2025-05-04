@@ -18,9 +18,9 @@ html {
   - - - - - - - F Ä R G E R - - - - - - - */
 
   --bg-color-base: #ffffff;
-  --bg-color-elevated: #fafafa;
+  --bg-color-elevated: #f5f5f5;
 
-  --bg-color-base-inverted: #f6f6f6;
+  --bg-color-base-inverted: #f5f5f5;
   --bg-color-elevated-inverted: #ffffff;
 
   --fg-color-primary: #141b23;
