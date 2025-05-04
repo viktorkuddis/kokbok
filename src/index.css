@@ -1,7 +1,21 @@
+/* 
+INDEX.CSS
+Här definerar vi grundläggande CORE-style 
+*/
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   /* ändrar rem: */
   font-size: 14px;
 }
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -26,28 +40,30 @@ a:hover {
   color: #535bf2;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* rubriker */
+h1 {
+  font-size: var(--font-size-h1-strong);
+  line-height: 1.1;
+}
+h2 {
+  font-size: var(--font-size-h2);
+}
+h3 {
+  font-size: var(--font-size-h3);
+}
+h4 {
+  font-size: var(--font-size-h4);
+}
+h5 {
+  font-size: var(--font-size-h5);
+}
+h6 {
+  font-size: var(--font-size-h6);
 }
 
 @media (prefers-color-scheme: light) {

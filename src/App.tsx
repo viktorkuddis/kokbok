@@ -1,5 +1,6 @@
-import "./App.css";
 import "./Variables.css";
+import "./App.css";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Start from "./pages/Start";

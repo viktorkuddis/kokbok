@@ -1,18 +1,35 @@
+/* 
+APP.CSS
+Här definerar vi sådant som inte känns grundläggande Core, Lite mer ✨estetisk✨ global style här! :)
+*/
+
+/* Rubrikstorlekar att använda då text visuellt ska avvika från dess semantiska storlek.  */
+.size-h1 {
+  font-size: var(--font-size-h1);
+}
+.size-h1-strong {
+  font-size: var(--font-size-h1-strong);
+}
+.size-h2 {
+  font-size: var(--font-size-h2);
+}
+.size-h3 {
+  font-size: var(--font-size-h3);
+}
+.size-h4 {
+  font-size: var(--font-size-h4);
+}
+.size-h5 {
+  font-size: var(--font-size-h5);
+}
+.size-h6 {
+  font-size: var(--font-size-h6);
+}
+
 .page-section-content-container {
   /* border: 1px solid #000; */
   margin: 0 auto;
   width: 100vw;
   max-width: 1024px;
   padding: 0 2rem;
-}
-
-.hero-section {
-  background-color: #169800;
-}
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
