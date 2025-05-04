@@ -19,6 +19,44 @@
   line-height: 1;
 }
 
+
+.rating1,
+.rating2,
+.rating3,
+.rating4,
+.rating5 {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  line-height: 1;
+
+}
+
+.rating1 {
+
+  color: #F15B50
+}
+
+.rating2 {
+  color: #F38A3F
+}
+
+.rating3 {
+
+  color: #42B2D7
+}
+
+.rating4 {
+  color: #2ABB7F;
+}
+
+.rating5 {
+  color: #82B536;
+
+
+}
+
+
+
 .cover {
   /* border: 1px solid green; */
   /* height: min-content; */

@@ -11,14 +11,29 @@ interface Props {
 export const RecipeCard = ({ headingLevel = "h2", recipe }: Props) => {
   const Heading = headingLevel;
 
+  const senast = recipe.lastMealPrep?.mostRecentTimestamp
+    ? new Date(recipe.lastMealPrep.mostRecentTimestamp).toLocaleDateString(
+        "sv-SE",
+        {
+          day: "numeric",
+          month: "long",
+          year: "numeric",
+        }
+      )
+    : "";
+
   return (
     <>
       <div>
         <CardContainer shadow isInverted className={styles.cardContainer}>
           <Heading>{recipe.title}</Heading>
           <div>
-            {recipe.rating?.label}
+            <span className={styles[`rating${recipe.rating?.value}`]}>
+              {recipe.rating?.label}
+            </span>
+
             {recipe.source && ` | ${recipe.source}`}
+            {senast && ` | ${senast}`}
           </div>
 
           <div className={`${styles.categppriesContainer}`}>
@@ -28,7 +43,6 @@ export const RecipeCard = ({ headingLevel = "h2", recipe }: Props) => {
               </div>
             ))}{" "}
           </div>
-
           <br />
           <div className={styles.cover}>
             <Cover
