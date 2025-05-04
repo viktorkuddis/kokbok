@@ -24,12 +24,17 @@ html {
   --bg-color-elevated-inverted: #ffffff;
 
   --fg-color-primary: #141b23;
-  --fg-color-secondary: #525252;
+  --fg-color-secondary: color-mix(in srgb, var(--fg-color-primary) 80%, white);
 
   --brand-color-strong: #169800;
   --brand-color-base: #4c8862;
-  --brand-color-strong-subtle: #ebf6e8;
-  --brand-color-base-subtle: #86bf93;
+
+  --brand-color-strong-subtle: color-mix(in srgb,
+      var(--brand-color-strong) 20%,
+      var(--bg-color-base));
+  --brand-color-base-subtle: color-mix(in srgb,
+      var(--brand-color-base) 20%,
+      var(--bg-color-base));
 
   --border-color-strong: hotpink;
   --border-color-subtle: hotpink;
@@ -63,24 +68,11 @@ https://atlassian.design/foundations/color-new/color-palette-new
     --bg-color-elevated-inverted: #2c333a;
 
     --fg-color-primary: #dee4ea;
-    --fg-color-secondary: color-mix(
-      in srgb,
-      var(--fg-color-primary) 80%,
-      black
-    );
+    /* --fg-color-secondary är en color mix som ärvs från grunden*/
 
     --brand-color-strong: hsl(111, 100%, 40%);
     --brand-color-base: hsl(142, 28%, 50%);
-    --brand-color-strong-subtle: color-mix(
-      in srgb,
-      var(--brand-color-strong) 70%,
-      black
-    );
-    --brand-color-base-subtle: color-mix(
-      in srgb,
-      var(--brand-color-base) 50%,
-      black
-    );
+    /* subtiler på brand colors är color mix som ärvs från grunden. */
 
     --border-color-strong: hotpink;
     --border-color-subtle: hotpink;
