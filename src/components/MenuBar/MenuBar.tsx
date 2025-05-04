@@ -6,14 +6,9 @@ const MenuBar = () => {
     <nav className={styles.menuBar}>
       <div className="page-section-content-container">
         <ul className={styles.menuItems}>
-          <li className={styles.listReset}>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive ? `${styles.item} ${styles.activeLink}` : styles.item
-              }
-            >
-              📕 Start
+          <li>
+            <NavLink to="/" className={styles.logoItem}>
+              <b>SMART</b>KOKBOK
             </NavLink>
           </li>
           <li>
