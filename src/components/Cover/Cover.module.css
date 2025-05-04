@@ -3,7 +3,7 @@
 
   /* width: fit-content;
   width: 100%; */
-  background-color: rgba(194, 144, 78, 0.456);
+  /* background-color: rgba(194, 144, 78, 0.456); */
 }
 
 .grid {
@@ -49,7 +49,8 @@
   transform: rotate(10deg) translateX(-10%);
   /* background-color: rgba(55, 203, 203, 0.249); */
 }
-.cookingMethod > div:nth-child(even) {
+
+.cookingMethod>div:nth-child(even) {
   transform: translateX(-20%);
   /* background-color: red; */
 }
@@ -71,7 +72,8 @@
   transform: rotate(-5deg) translateX(-5%) translatey(5%);
   /* background-color: rgba(255, 182, 193, 0.406); */
 }
-.categories > div:nth-child(even) {
+
+.categories>div:nth-child(even) {
   transform: translateY(30%);
 }
 
@@ -89,16 +91,17 @@
   /* background-color: rgba(101, 33, 43, 0.406); */
 }
 
-.mealType > div:nth-child(5) {
+.mealType>div:nth-child(5) {
   transform: translateX(10%);
   /* background-color: antiquewhite; */
 }
 
-.mealType > div:nth-child(2) {
+.mealType>div:nth-child(2) {
   transform: translateX(-50%);
   /* background-color: blue; */
 }
-.mealType > div:nth-child(1) {
+
+.mealType>div:nth-child(1) {
   transform: translateX(-45%) translateY(10%);
   /* background-color: red; */
 }
