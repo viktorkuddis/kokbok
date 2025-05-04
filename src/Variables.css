@@ -31,8 +31,10 @@ html {
   --brand-color-strong-subtle: #ebf6e8;
   --brand-color-base-subtle: #86bf93;
 
-  --border-color-strong: #525252;
-  --border-color-subtle: #525252;
+  --border-color-strong: hotpink;
+  --border-color-subtle: hotpink;
+
+  --shadow-color-base: black;
 
   /* _____________________________________
   - - - - - - - U N I T S - - - - - - - */
@@ -41,4 +43,48 @@ html {
   --border-radius-base: 1rem;
   --border-radius-lg: 2rem;
   --border-radius-sm: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    /* _______________________________________
+    - - - - - - - F Ä R G E R - - - - - - - */
+    /* 
+Taget från atlasian
+
+https://images.ctfassets.net/8j5aqoy0ts8s/2pyzJIOTejrq1jM0QVA68l/7ea6ba1d6bb4dfee310fcb64d51eb3fa/dark-mode-light-mode.png
+
+https://atlassian.design/foundations/color-new/color-palette-new
+ */
+    --bg-color-base: #161a1d;
+    --bg-color-elevated: #161a1d;
+
+    --bg-color-base-inverted: #22272b;
+    --bg-color-elevated-inverted: #2c333a;
+
+    --fg-color-primary: #dee4ea;
+    --fg-color-secondary: color-mix(
+      in srgb,
+      var(--fg-color-primary) 80%,
+      black
+    );
+
+    --brand-color-strong: hsl(111, 100%, 40%);
+    --brand-color-base: hsl(142, 28%, 50%);
+    --brand-color-strong-subtle: color-mix(
+      in srgb,
+      var(--brand-color-strong) 70%,
+      black
+    );
+    --brand-color-base-subtle: color-mix(
+      in srgb,
+      var(--brand-color-base) 70%,
+      black
+    );
+
+    --border-color-strong: hotpink;
+    --border-color-subtle: hotpink;
+
+    --shadow-color-base: black;
+  }
 }

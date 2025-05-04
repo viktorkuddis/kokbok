@@ -7,5 +7,7 @@
   background-color: var(--bg-color-elevated-inverted);
 }
 .shadow {
-  box-shadow: 0rem 0.25rem 3rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0rem 0.25rem 3rem hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0rem 0.25rem 3rem
+    color-mix(in srgb, var(--shadow-color-base) 10%, transparent);
 }
