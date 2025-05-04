@@ -78,7 +78,7 @@ https://atlassian.design/foundations/color-new/color-palette-new
     );
     --brand-color-base-subtle: color-mix(
       in srgb,
-      var(--brand-color-base) 70%,
+      var(--brand-color-base) 50%,
       black
     );
 
