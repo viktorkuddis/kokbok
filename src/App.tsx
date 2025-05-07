@@ -31,72 +31,19 @@ const App = () => {
 
   return (
     <>
-      <div className="appcontainer">
-        {" "}
-        <footer>DETTA ÄR footern POSITION STICKY BOTTOM HEADER HEADERRR</footer>
-        <div className="sidansInnehall">
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Layout />}>
-                <Route index element={<Start />} />
-                <Route path="recept" element={<Recipe />} />
-                <Route path="smarta-listor" element={<Recomendations />} />
-                <Route path="alla-recept" element={<Browse />} />
-                <Route path="Koket" element={<KitchenList />} />
-                <Route path="inkopslista" element={<ShoppingList />} />
-                <Route path="*" element={<NotFound />} />
-              </Route>
-            </Routes>
-          </BrowserRouter>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          voluptates velit ad amet laudantium at, unde voluptatem obcaecati
-          veritatis minima saepe possimus aperiam, suscipit delectus culpa qui
-          maxime quaerat eaque? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Fugiat voluptates velit ad amet laudantium at, unde
-          voluptatem obcaecati veritatis minima saepe possimus aperiam, suscipit
-          delectus culpa qui maxime quaerat eaque? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Fugiat voluptates velit ad amet
-          laudantium at, unde voluptatem obcaecati veritatis minima saepe
-          possimus aperiam, suscipit delectus culpa qui maxime quaerat eaque?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          voluptates velit ad amet laudantium at, unde voluptatem obcaecati
-          veritatis minima saepe possimus aperiam, suscipit delectus veritatis
-          minima saepe possimus aperiam, suscipit delectus culpa qui maxime
-          quaerat eaque? Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Fugiat voluptates velit ad amet laudantium at, unde voluptatem
-          obcaecati veritatis minima saepe possimus aperiam, suscipit delectus
-          culpa qui maxime quaerat eaque? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Fugiat voluptates velit ad amet laudantium at, unde
-          voluptatem obcaecati veritatis minima saepe possimus aperiam, suscipit
-          delectus culpa qui maxime quaerat eaque? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Fugiat voluptates velit ad amet
-          laudantium at, unde voluptatem obcaecati veritatis minima saepe
-          possimus aperiam, suscipit delectus veritatis minima saepe possimus
-          aperiam, suscipit delectus culpa qui maxime quaerat eaque? Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Fugiat voluptates velit
-          ad amet laudantium at, unde voluptatem obcaecati veritatis minima
-          saepe possimus aperiam, suscipit delectus culpa qui maxime quaerat
-          eaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          voluptates velit ad amet laudantium at, unde voluptatem obcaecati
-          veritatis minima saepe possimus aperiam, suscipit delectus culpa qui
-          maxime quaerat eaque? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Fugiat voluptates velit ad amet laudantium at, unde
-          voluptatem obcaecati veritatis minima saepe possimus aperiam, suscipit
-          delectus veritatis minima saepe possimus aperiam, suscipit delectus
-          culpa qui maxime quaerat eaque? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Fugiat voluptates velit ad amet laudantium at, unde
-          voluptatem obcaecati veritatis minima saepe possimus aperiam, suscipit
-          delectus culpa qui maxime quaerat eaque? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Fugiat voluptates velit ad amet
-          laudantium at, unde voluptatem obcaecati veritatis minima saepe
-          possimus aperiam, suscipit delectus culpa qui maxime quaerat eaque?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          voluptates velit ad amet laudantium at, unde voluptatem obcaecati
-          veritatis minima saepe possimus aperiam, suscipit delectus culpa qui
-          maxime quaerat eaque? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Fugiat voluptates velit ad amet
-        </div>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Start />} />
+            <Route path="recept" element={<Recipe />} />
+            <Route path="smarta-listor" element={<Recomendations />} />
+            <Route path="alla-recept" element={<Browse />} />
+            <Route path="Koket" element={<KitchenList />} />
+            <Route path="inkopslista" element={<ShoppingList />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };

@@ -16,10 +16,6 @@ html {
   font-size: 14px;
 }
 
-body {
-  background-color: rgb(0, 255, 85); /* eller vad du använder */
-}
-
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -33,25 +29,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.appcontainer {
-  background-color: rgb(29, 112, 85);
-  /* display: flex; */
-  /* flex-direction: column; */
-  position: relative;
-  height: 100vh;
-}
-/* Sidans innehåll tar all tillgänglig plats och blir scrollbart vid behov */
-.sidansInnehall {
-  background-color: aqua;
-}
-
-/* Footer ligger alltid längst ner */
-footer {
-  background-color: coral;
-  position: fixed;
-  top: 0;
 }
 
 a {
