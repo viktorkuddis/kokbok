@@ -19,15 +19,21 @@ import ShoppingList from "./pages/ShoppingList";
 // React-komponent
 
 import { useRecipeFetcher } from "./hooks/useRecipeFetcher";
+import { isMobile } from "./utils/isMobileUtils";
 
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { AppContext } from "./context/AppContext";
+
 const App = () => {
+  const { setIsMobileDevice } = useContext(AppContext);
+
   const fetchAndStoreRecipes = useRecipeFetcher();
 
   // useEffect för att anropa funktionen när appen först monteras
   useEffect(() => {
     fetchAndStoreRecipes();
-  }, [fetchAndStoreRecipes]);
+    setIsMobileDevice(isMobile());
+  }, [fetchAndStoreRecipes, setIsMobileDevice]);
 
   return (
     <>

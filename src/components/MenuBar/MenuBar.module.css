@@ -35,7 +35,7 @@ li {
   padding: 0.5rem 0rem;
   padding-right: 1rem;
   color: var(--brand-color-strong);
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-h4);
 
   &:hover {
     color: color-mix(in srgb, var(--brand-color-strong) 70%, transparent);
