@@ -39,6 +39,13 @@ body {
   height: 100svh;
 }
 
+.sidansInnehall {
+  background-color: aqua;
+}
+footer {
+  background-color: coral;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

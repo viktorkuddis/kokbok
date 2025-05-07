@@ -31,38 +31,21 @@ const App = () => {
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Start />} />
-            <Route path="recept" element={<Recipe />} />
-            <Route path="smarta-listor" element={<Recomendations />} />
-            <Route path="alla-recept" element={<Browse />} />
-            <Route path="Koket" element={<KitchenList />} />
-            <Route path="inkopslista" element={<ShoppingList />} />
-            <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-      {/* {" "}
-      <div className="hero-section">
-        <div className="page-section-content-container">
-          <h1>Things to Learn</h1>
-
-          <button
-            type="button"
-            onClick={() => {
-              fetch("http://localhost:8000/")
-                .then((response) => response.json())
-                .then((payload) => {
-                  console.log(payload);
-                });
-            }}
-          >
-            Fetch List
-          </button>
-        </div>
-      </div> */}
+      <div className="sidansInnehall">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Start />} />
+              <Route path="recept" element={<Recipe />} />
+              <Route path="smarta-listor" element={<Recomendations />} />
+              <Route path="alla-recept" element={<Browse />} />
+              <Route path="Koket" element={<KitchenList />} />
+              <Route path="inkopslista" element={<ShoppingList />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   );
 };
