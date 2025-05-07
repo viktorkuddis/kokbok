@@ -15,6 +15,10 @@ html {
   /* ändrar rem: */
   font-size: 14px;
 }
+html,
+body {
+  background-color: rgb(140, 0, 255); /* eller vad du använder */
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
