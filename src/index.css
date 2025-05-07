@@ -31,19 +31,26 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+.appcontainer {
+  background-color: rgb(29, 112, 85);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: #535bf2;
-  height: 100svh;
+  height: 100vh;
+}
+/* Sidans innehåll tar all tillgänglig plats och blir scrollbart vid behov */
+.sidansInnehall {
+  overflow-y: auto;
+  background-color: aqua;
+  flex-grow: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.sidansInnehall {
-  background-color: aqua;
-}
+/* Footer ligger alltid längst ner */
 footer {
   background-color: coral;
+
+  text-align: center;
 }
 
 a {
