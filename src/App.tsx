@@ -32,6 +32,8 @@ const App = () => {
   return (
     <>
       <div className="appcontainer">
+        {" "}
+        <footer>DETTA ÄR footern POSITION STICKY BOTTOM HEADER HEADERRR</footer>
         <div className="sidansInnehall">
           <BrowserRouter>
             <Routes>
@@ -94,7 +96,6 @@ const App = () => {
           maxime quaerat eaque? Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Fugiat voluptates velit ad amet
         </div>
-        <footer>DETTA ÄR footern POSITION STICKY BOTTOM</footer>
       </div>
     </>
   );
