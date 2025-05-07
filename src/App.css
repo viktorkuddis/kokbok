@@ -33,3 +33,9 @@ Här definerar vi sådant som inte känns grundläggande Core, Lite mer ✨estet
   max-width: 1024px;
   padding: 0 2rem;
 }
+
+@media screen and (max-width: 425px) {
+  .page-section-content-container {
+    padding: 0 1rem;
+  }
+}

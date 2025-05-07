@@ -8,23 +8,89 @@ li {
 .menuBar {
   border-bottom: 3px solid
     color-mix(in srgb, var(--brand-color-strong-subtle) 50%, transparent);
-  padding: 1rem 0;
+  padding: 0.5rem 0 0.5rem 0;
   position: sticky;
   background-color: var(--bg-color-base);
   z-index: 100;
-
   top: 0px;
 }
 
-.menuItems {
+.contentDesktop {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  align-items: center;
+
+  .menuItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+}
+.contentMobile {
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .menuItems {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 3rem;
+
+    overflow-x: auto;
+
+    gap: 0.5;
+
+    scroll-snap-type: x mandatory;
+    /* background-color: aqua; */
+
+    /* dölja skroll */
+    -ms-overflow-style: none; /* IE och Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .menuItems::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari och nya Edge */
+  }
+  li {
+    scroll-snap-align: center;
+  }
+  .menuItems li:first-child {
+    /* background-color: aliceblue; */
+    padding-left: 1rem;
+  }
+  .menuItems li:last-child {
+    /* background-color: aliceblue; */
+    padding-right: 1rem;
+  }
+
+  .item {
+    border: 2px solid var(--brand-color-strong-subtle);
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  .activeLink {
+    background-color: color-mix(
+      in srgb,
+      var(--brand-color-strong-subtle) 100%,
+      transparent
+    );
+    /* border-color: var(--brand-color-strong-subtle); */
+  }
 }
 
 .item {
   padding: 0.5rem 0.5rem;
+  margin-right: 0.5rem;
   color: color-mix(in srgb, var(--fg-color-secondary) 50%, grey);
+
+  white-space: nowrap;
 
   &:hover {
     color: var(--brand-color-strong);

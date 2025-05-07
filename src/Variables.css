@@ -29,12 +29,16 @@ html {
   --brand-color-strong: #169800;
   --brand-color-base: #4c8862;
 
-  --brand-color-strong-subtle: color-mix(in srgb,
-      var(--brand-color-strong) 20%,
-      var(--bg-color-base));
-  --brand-color-base-subtle: color-mix(in srgb,
-      var(--brand-color-base) 20%,
-      var(--bg-color-base));
+  --brand-color-strong-subtle: color-mix(
+    in srgb,
+    var(--brand-color-strong) 20%,
+    var(--bg-color-base)
+  );
+  --brand-color-base-subtle: color-mix(
+    in srgb,
+    var(--brand-color-base) 20%,
+    var(--bg-color-base)
+  );
 
   --border-color-strong: hotpink;
   --border-color-subtle: hotpink;
