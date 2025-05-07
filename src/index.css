@@ -31,6 +31,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #535bf2;
+  height: 100vh;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
