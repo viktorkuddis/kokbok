@@ -33,24 +33,21 @@ html {
 
 .appcontainer {
   background-color: rgb(29, 112, 85);
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
+  position: relative;
   height: 100vh;
 }
 /* Sidans innehåll tar all tillgänglig plats och blir scrollbart vid behov */
 .sidansInnehall {
-  overflow-y: auto;
   background-color: aqua;
-  flex-grow: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 /* Footer ligger alltid längst ner */
 footer {
   background-color: coral;
-
-  text-align: center;
+  position: sticky;
+  bottom: 0;
 }
 
 a {

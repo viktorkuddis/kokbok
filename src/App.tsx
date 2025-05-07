@@ -94,7 +94,7 @@ const App = () => {
           maxime quaerat eaque? Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Fugiat voluptates velit ad amet
         </div>
-        <footer>DETTA ÄR footern</footer>
+        <footer>DETTA ÄR footern POSITION STICKY BOTTOM</footer>
       </div>
     </>
   );
