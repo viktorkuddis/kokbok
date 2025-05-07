@@ -46,7 +46,7 @@ html {
 /* Footer ligger alltid längst ner */
 footer {
   background-color: coral;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 
